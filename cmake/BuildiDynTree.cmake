@@ -28,7 +28,7 @@ endif()
 ycm_ep_helper(iDynTree TYPE GIT
               STYLE GITHUB
               REPOSITORY robotology/idyntree.git
-              TAG master
+              TAG fix-install-bindings-extern
               COMPONENT dynamics
               FOLDER src
               CMAKE_ARGS -DIDYNTREE_USES_IPOPT:BOOL=ON
