@@ -40,7 +40,7 @@ if(ROBOTOLOGY_ENABLE_DYNAMICS)
   # If we are generating conda-recipes, then we also need to build idyntree-matlab-bindings
   # as the iDynTree package provided by conda-forge does not have MATLAB bindings, so we generate
   # this package in the robotology channel
-  if(ROBOTOLOGY_GENERATE_CONDA_RECIPES AND ROBOTOLOGY_USES_MATLAB)
+  if(ROBOTOLOGY_USES_MATLAB)
     find_or_build_package(idyntree-matlab-bindings)
   endif()
   find_or_build_package(OsqpEigen QUIET)
