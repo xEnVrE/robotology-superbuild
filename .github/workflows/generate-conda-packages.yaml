@@ -33,7 +33,7 @@ jobs:
 
         - uses: conda-incubator/setup-miniconda@v2
           with:
-            mamba-version: "*"
+            mamba-version: "0.14.1"
             channels: conda-forge
             channel-priority: true
             python-version: "3.8"
