@@ -36,11 +36,12 @@ ycm_ep_helper(iDynTree TYPE GIT
                          -DIDYNTREE_USES_ICUB_MAIN:BOOL=ON
                          -DIDYNTREE_USES_OSQPEIGEN:BOOL=ON
                          -DIDYNTREE_USES_IRRLICHT:BOOL=ON
-                         -DIDYNTREE_USES_MATLAB:BOOL=${ROBOTOLOGY_USES_MATLAB}
+                         #-DIDYNTREE_USES_MATLAB:BOOL=${ROBOTOLOGY_USES_MATLAB}
+                         -DIDYNTREE_USES_MATLAB:BOOL=OFF
                          -DIDYNTREE_USES_PYTHON:BOOL=${ROBOTOLOGY_USES_PYTHON}
                          -DIDYNTREE_USES_OCTAVE:BOOL=${ROBOTOLOGY_USES_OCTAVE}
                          ${iDynTree_OPTIONAL_CMAKE_ARGS}
               DEPENDS ${iDynTree_DEPENDS})
 
 set(iDynTree_CONDA_PKG_NAME idyntree)
-set(iDynTree_CONDA_PKG_CONDA_FORGE_OVERRIDE ON)
+# set(iDynTree_CONDA_PKG_CONDA_FORGE_OVERRIDE ON)
